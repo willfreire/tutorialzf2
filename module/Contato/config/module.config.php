@@ -22,6 +22,7 @@ return array(
                     ),
                 ),
             ),
+            
             # literal para action sobre home
             'sobre' => array(
                 'type' => 'Literal',
@@ -33,6 +34,19 @@ return array(
                     ),
                 ),
             ),
+            
+            # literal para action sobre login
+            'login' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/login',
+                    'defaults' => array(
+                        'controller' => 'HomeController',
+                        'action' => 'login',
+                    ),
+                ),
+            ),
+            
             # segment para controller contatos
             'contatos' => array(
                 'type' => 'Segment',
